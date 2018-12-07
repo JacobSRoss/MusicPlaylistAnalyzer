@@ -42,8 +42,8 @@ namespace MusicPlaylistAnalyzer
             var rapSongs = (from musicStats in musicStatsList where musicStats.Genre == "Hip-Hop/Rap" select musicStats).Count();
             report += $"{rapSongs}\r\n";
 
-            report += "\r\nSongs from the album Welcom to the Fishbowl: ";
-            var albumSongs = from musicStats in musicStatsList where musicStats.Album == "Welcom to the Fishbowl" select new { musicStats.Name, musicStats.Artist, musicStats.Album, musicStats.Genre, musicStats.Size, musicStats.Time, musicStats.Year, musicStats.Plays };
+            report += "\r\nSongs from the album Welcome to the Fishbowl: ";
+            var albumSongs = from musicStats in musicStatsList where musicStats.Album == "Welcome to the Fishbowl" select new { musicStats.Name, musicStats.Artist, musicStats.Album, musicStats.Genre, musicStats.Size, musicStats.Time, musicStats.Year, musicStats.Plays };
             if (albumSongs.Count() > 0)
             {
                 foreach (var song in albumSongs)
@@ -77,6 +77,7 @@ namespace MusicPlaylistAnalyzer
                 foreach (var songName in longSongNames)
                 {
                     report += songName.Name;
+                    report += "\r\n";
                 }
             } else
             {
