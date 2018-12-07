@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Users\\Jacob 2015\\Desktop\\IT2040\\MusicPlaylistAnalyzer\\MusicPlaylistAnalyzer\\MusicPlaylistAnalyzer.csproj",
+  "TargetFramework": "v4.6.1",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
